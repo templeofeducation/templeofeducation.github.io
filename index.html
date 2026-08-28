@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site-v12.css" />
+  <link rel="stylesheet" href="site-v13.css" />
 </head>
 <body>
   <header class="site-header">
@@ -67,7 +67,11 @@
       </div>
       <div class="gallery-grid" aria-label="Categorized school photo gallery">
         <article class="gallery-card">
-          <div class="photo-placeholder" role="img" aria-label="Classroom photo placeholder">Classroom</div>
+          <div class="teacher-slider school-photo-slider" data-slider aria-label="Bright learning room photos">
+            <div class="teacher-slides"><img class="teacher-photo is-active" src="assets/bright-learning-room-1.svg" alt="Bright learning room — photo 1 of 3" width="1280" height="720" /><img class="teacher-photo" src="assets/bright-learning-room-2.svg" alt="Bright learning room — photo 2 of 3" width="1040" height="585" loading="lazy" /><img class="teacher-photo" src="assets/bright-learning-room-3.svg" alt="Bright learning room — photo 3 of 3" width="1280" height="720" loading="lazy" /></div>
+            <button class="slider-button slider-prev" type="button" aria-label="Previous classroom photo">‹</button>
+            <button class="slider-button slider-next" type="button" aria-label="Next classroom photo">›</button>
+          </div>
           <span class="category-label">Category: Classrooms</span>
           <h3>Bright learning rooms</h3>
           <p>Use this category for photos of study areas, learning corners, boards, seating, and classroom decorations.</p>

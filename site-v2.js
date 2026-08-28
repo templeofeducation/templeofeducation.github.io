@@ -1,8 +1,3 @@
-// Remove obsolete TOE banner markup that may remain in a cached copy of the page.
-document.querySelectorAll('img[src*="toe-banner"], .brand-mark svg, .hero-visual').forEach((element) => {
-  element.remove();
-});
-
 const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('#main-menu');
 
@@ -42,3 +37,38 @@ document.querySelector('#application-form').addEventListener('submit', (event) =
   window.location.href = mailtoLink;
   window.open(whatsappLink, '_blank', 'noopener');
 });
+
+const teacherSlider = document.querySelector('[data-slider]');
+if (teacherSlider) {
+  const slides = [...teacherSlider.querySelectorAll('.teacher-photo')];
+  const status = teacherSlider.querySelector('.slider-status');
+  let activeSlide = 0;
+  let autoplay;
+
+  const showSlide = (index) => {
+    activeSlide = (index + slides.length) % slides.length;
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle('is-active', slideIndex === activeSlide);
+    });
+    status.textContent = `Photo ${activeSlide + 1} of ${slides.length}`;
+  };
+
+  const startAutoplay = () => {
+    window.clearInterval(autoplay);
+    autoplay = window.setInterval(() => showSlide(activeSlide + 1), 4500);
+  };
+
+  teacherSlider.querySelector('.slider-prev').addEventListener('click', () => {
+    showSlide(activeSlide - 1);
+    startAutoplay();
+  });
+  teacherSlider.querySelector('.slider-next').addEventListener('click', () => {
+    showSlide(activeSlide + 1);
+    startAutoplay();
+  });
+  teacherSlider.addEventListener('mouseenter', () => window.clearInterval(autoplay));
+  teacherSlider.addEventListener('mouseleave', startAutoplay);
+  teacherSlider.addEventListener('focusin', () => window.clearInterval(autoplay));
+  teacherSlider.addEventListener('focusout', startAutoplay);
+  startAutoplay();
+}

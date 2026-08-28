@@ -33,10 +33,9 @@ h2 { font-size: clamp(2rem, 4vw, 3rem); }
 .btn { display: inline-flex; justify-content: center; align-items: center; border: 0; border-radius: 999px; padding: 13px 22px; text-decoration: none; font-weight: 800; cursor: pointer; }
 .primary { background: var(--primary); color: white; box-shadow: 0 10px 20px rgba(108,77,246,.28); }
 .secondary { background: var(--white); color: var(--primary); border: 2px solid #ece6ff; }
-.hero-card, .card, .teacher-card, .application-form, .contact-panel { background: var(--white); border-radius: 28px; box-shadow: var(--shadow); }
-.hero-card { padding: 26px; display: grid; gap: 18px; }
-.hero-card div { padding: 18px; border-radius: 20px; background: #f6f3ff; }
-.hero-card strong { display: block; color: var(--primary); font-size: 2rem; font-family: 'Baloo 2', cursive; }
+.card, .teacher-card, .application-form, .contact-panel { background: var(--white); border-radius: 28px; box-shadow: var(--shadow); }
+.hero-visual { display: grid; place-items: center; }
+.hero-visual img { display: block; width: min(100%, 460px); height: auto; border-radius: 50%; filter: drop-shadow(0 24px 28px rgba(37, 48, 71, .2)); }
 .soft-bg { background: linear-gradient(180deg, #fff7df, #f4fffd); border-radius: 34px; }
 .section-heading { max-width: 760px; margin-bottom: 28px; }
 .cards, .teacher-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }

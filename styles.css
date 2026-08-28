@@ -15,7 +15,8 @@ a { color: inherit; }
 .site-header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.94); box-shadow: 0 4px 20px rgba(0,0,0,.06); backdrop-filter: blur(12px); }
 .navbar { max-width: 1180px; margin: auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; font-size: 1.15rem; }
-.brand-mark { display: grid; place-items: center; width: 46px; height: 46px; color: white; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 16px; font-family: 'Baloo 2', cursive; }
+.brand-mark { display: grid; place-items: center; flex: 0 0 46px; width: 46px; height: 46px; overflow: hidden; border-radius: 50%; background: var(--white); box-shadow: 0 4px 12px rgba(37, 48, 71, .18); }
+.brand-mark svg { display: block; width: 100%; height: 100%; }
 .menu { display: flex; align-items: center; gap: 18px; margin: 0; padding: 0; list-style: none; font-weight: 700; }
 .menu a { text-decoration: none; padding: 8px 10px; border-radius: 999px; }
 .menu a:hover { background: var(--soft); color: var(--primary); }
@@ -32,10 +33,9 @@ h2 { font-size: clamp(2rem, 4vw, 3rem); }
 .btn { display: inline-flex; justify-content: center; align-items: center; border: 0; border-radius: 999px; padding: 13px 22px; text-decoration: none; font-weight: 800; cursor: pointer; }
 .primary { background: var(--primary); color: white; box-shadow: 0 10px 20px rgba(108,77,246,.28); }
 .secondary { background: var(--white); color: var(--primary); border: 2px solid #ece6ff; }
-.hero-card, .card, .teacher-card, .application-form, .contact-panel { background: var(--white); border-radius: 28px; box-shadow: var(--shadow); }
-.hero-card { padding: 26px; display: grid; gap: 18px; }
-.hero-card div { padding: 18px; border-radius: 20px; background: #f6f3ff; }
-.hero-card strong { display: block; color: var(--primary); font-size: 2rem; font-family: 'Baloo 2', cursive; }
+.card, .teacher-card, .application-form, .contact-panel { background: var(--white); border-radius: 28px; box-shadow: var(--shadow); }
+.hero-visual { display: grid; place-items: center; }
+.hero-visual img { display: block; width: min(100%, 460px); height: auto; border-radius: 50%; filter: drop-shadow(0 24px 28px rgba(37, 48, 71, .2)); }
 .soft-bg { background: linear-gradient(180deg, #fff7df, #f4fffd); border-radius: 34px; }
 .section-heading { max-width: 760px; margin-bottom: 28px; }
 .cards, .teacher-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }

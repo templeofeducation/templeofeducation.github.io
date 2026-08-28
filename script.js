@@ -1,3 +1,8 @@
+// Remove obsolete TOE banner markup that may remain in a cached copy of the page.
+document.querySelectorAll('img[src*="toe-banner"], .brand-mark svg, .hero-visual').forEach((element) => {
+  element.remove();
+});
+
 const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('#main-menu');
 

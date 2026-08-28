@@ -31,7 +31,7 @@ if (!teacher || !/^[a-z-]+$/.test(teacher)) {
 
       photos.forEach((photo, index) => {
         const image = document.createElement('img');
-        image.src = photo.src;
+        image.src = photo.getAttribute('src');
         image.alt = `${name} — photo ${index + 1} of ${photos.length}`;
         image.loading = index === 0 ? 'eager' : 'lazy';
         gallery.append(image);

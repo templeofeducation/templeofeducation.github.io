@@ -24,6 +24,8 @@ a { color: inherit; }
 .section-pad { padding: 76px 20px; }
 .section { max-width: 1120px; margin: auto; }
 .hero { min-height: 78vh; display: grid; grid-template-columns: 1.3fr .7fr; align-items: center; gap: 40px; max-width: 1180px; margin: auto; background: radial-gradient(circle at top right, #ffe8a3 0 25%, transparent 26%), radial-gradient(circle at bottom left, #d8fff7 0 22%, transparent 23%); }
+/* Never display the retired large logo if an older hero fragment is restored. */
+.hero-visual { display: none !important; }
 .eyebrow { color: var(--primary); text-transform: uppercase; letter-spacing: .12em; font-weight: 800; font-size: .82rem; }
 h1, h2, h3 { font-family: 'Baloo 2', cursive; line-height: 1.05; margin: 0 0 16px; }
 h1 { font-size: clamp(2.4rem, 6vw, 5rem); max-width: 780px; }

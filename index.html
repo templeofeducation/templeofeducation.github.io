@@ -6,6 +6,21 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
+  <meta name="site-release" content="20260828-8" />
+  <script>
+    // Force one cache-busted navigation when a newly deployed release is first seen.
+    (() => {
+      const release = '20260828-8';
+      const releaseKey = 'temple-of-education-release';
+
+      if (localStorage.getItem(releaseKey) !== release) {
+        localStorage.setItem(releaseKey, release);
+        const latestUrl = new URL(window.location.href);
+        latestUrl.searchParams.set('release', release);
+        window.location.replace(latestUrl);
+      }
+    })();
+  </script>
   <title>Temple of Education Kindergarten</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

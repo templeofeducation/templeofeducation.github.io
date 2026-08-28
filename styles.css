@@ -23,6 +23,8 @@ a { color: inherit; }
 .section-pad { padding: 76px 20px; }
 .section { max-width: 1120px; margin: auto; }
 .hero { min-height: 78vh; display: grid; grid-template-columns: 1.3fr .7fr; align-items: center; gap: 40px; max-width: 1180px; margin: auto; background: radial-gradient(circle at top right, #ffe8a3 0 25%, transparent 26%), radial-gradient(circle at bottom left, #d8fff7 0 22%, transparent 23%); }
+/* Never display the retired large logo if an older hero fragment is restored. */
+.hero-visual { display: none !important; }
 .eyebrow { color: var(--primary); text-transform: uppercase; letter-spacing: .12em; font-weight: 800; font-size: .82rem; }
 h1, h2, h3 { font-family: 'Baloo 2', cursive; line-height: 1.05; margin: 0 0 16px; }
 h1 { font-size: clamp(2.4rem, 6vw, 5rem); max-width: 780px; }
@@ -60,3 +62,10 @@ footer { text-align: center; padding: 24px; background: var(--ink); color: white
   .hero, .cards, .teacher-grid, .application-form, .location-grid { grid-template-columns: 1fr; }
   .section-pad { padding: 54px 18px; }
 }
+.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.gallery-card { background: var(--white); border-radius: 26px; box-shadow: var(--shadow); overflow: hidden; padding: 18px; }
+.photo-placeholder { min-height: 170px; display: grid; place-items: center; border-radius: 20px; color: white; font-family: 'Baloo 2', cursive; font-size: 1.7rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--accent)); margin-bottom: 16px; }
+.category-label { display: inline-flex; margin-bottom: 12px; padding: 6px 12px; border-radius: 999px; background: var(--soft); color: var(--primary); font-size: .82rem; font-weight: 900; }
+.gallery-card p { color: var(--muted); margin-bottom: 0; }
+@media (max-width: 1020px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .gallery-grid { grid-template-columns: 1fr; } }

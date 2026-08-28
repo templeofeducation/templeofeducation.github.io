@@ -71,8 +71,6 @@ footer { text-align: center; padding: 24px; background: var(--ink); color: white
 @media (max-width: 760px) {
   .teacher-photo { height: 320px; }
 }
-<<<<<<<< HEAD:site-v4.css
-========
 .teacher-slider { position: relative; margin-bottom: 22px; overflow: hidden; border-radius: 20px; background: var(--soft); }
 .teacher-slides { position: relative; height: 240px; }
 .teacher-slider .teacher-photo { position: absolute; inset: 0; height: 100%; margin: 0; opacity: 0; transform: translateX(12%); transition: opacity .45s ease, transform .45s ease; }
@@ -95,4 +93,3 @@ footer { text-align: center; padding: 24px; background: var(--ink); color: white
 .teacher-role { display: inline-flex; margin: 0; padding: 7px 12px; border-radius: 999px; background: var(--soft); color: var(--primary); font-weight: 800; }
 /* Preserve each HOD portrait's full composition instead of cropping it to the card. */
 [data-teacher="rajendra-prasad"] .teacher-photo { object-fit: contain; object-position: center; background: #eef8ff; }
->>>>>>>> codex/remove-duplicate-school-photo-gallery-divs-sxmfic:site-v12.css

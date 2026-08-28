@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temple of Education Kindergarten</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Temple of Education home">
+        <span class="brand-mark">TOE</span>
+        <span>Temple of Education</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">☰</button>
+      <ul id="main-menu" class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#teachers">Teachers</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#admission">Apply</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section-pad">
+      <div class="hero-content">
+        <p class="eyebrow">Kindergarten • Playgroup • Nursery • LKG • UKG</p>
+        <h1>Building bright beginnings with love, care, and joyful learning.</h1>
+        <p class="hero-copy">Temple of Education Kindergarten nurtures curious minds through safe classrooms, caring teachers, activity-based lessons, and strong parent partnership.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#admission">Submit Application</a>
+          <a class="btn secondary" href="#contact">Talk to Admissions</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="School highlights">
+        <div><strong>15:1</strong><span>student-teacher attention</span></div>
+        <div><strong>Safe</strong><span>child-friendly campus</span></div>
+        <div><strong>Daily</strong><span>creative activities</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-pad">
+      <div class="section-heading">
+        <p class="eyebrow">About our school</p>
+        <h2>A warm first school for confident young learners</h2>
+      </div>
+      <p>Temple of Education is a kindergarten school dedicated to helping every child feel welcomed, respected, and excited to learn. Our classrooms balance phonics, numbers, storytelling, art, music, movement, manners, and guided play so children grow academically, socially, and emotionally.</p>
+      <p>We proudly praise the school community—teachers, parents, helpers, and students—for creating an environment where kindness, discipline, creativity, and curiosity are practiced every day.</p>
+    </section>
+
+    <section id="programs" class="section section-pad soft-bg">
+      <div class="section-heading">
+        <p class="eyebrow">Programs</p>
+        <h2>Age-appropriate learning paths</h2>
+      </div>
+      <div class="cards">
+        <article class="card"><h3>Playgroup</h3><p>Gentle separation, sensory play, rhymes, motor-skill activities, and friendly routines.</p></article>
+        <article class="card"><h3>Nursery</h3><p>Language readiness, number concepts, storytelling, coloring, craft, music, and outdoor play.</p></article>
+        <article class="card"><h3>LKG & UKG</h3><p>Early reading, writing, mathematics, environmental awareness, life skills, and school readiness.</p></article>
+      </div>
+    </section>
+
+    <section id="teachers" class="section section-pad">
+      <div class="section-heading">
+        <p class="eyebrow">Teachers</p>
+        <h2>Caring mentors for every child</h2>
+      </div>
+      <div class="teacher-grid">
+        <article class="teacher-card"><span>AS</span><h3>Ms. Asha Sharma</h3><p>Head Teacher focused on phonics, storytelling, and positive classroom routines.</p></article>
+        <article class="teacher-card"><span>RK</span><h3>Ms. Riya Kapoor</h3><p>Creative Arts Teacher encouraging imagination through drawing, craft, music, and dance.</p></article>
+        <article class="teacher-card"><span>MF</span><h3>Ms. Meera Fernandes</h3><p>Early Years Coordinator supporting parent communication and child development tracking.</p></article>
+      </div>
+    </section>
+
+    <section id="why-us" class="section section-pad praise">
+      <div class="section-heading">
+        <p class="eyebrow">Why parents appreciate us</p>
+        <h2>Effort that shows in every smile</h2>
+      </div>
+      <ul class="feature-list">
+        <li>Individual attention that helps children settle quickly and learn at their own pace.</li>
+        <li>Dedicated teachers who celebrate small achievements and build confidence.</li>
+        <li>Regular activities, celebrations, and parent updates that make school life memorable.</li>
+        <li>Clean, colorful spaces designed for safety, comfort, creativity, and joyful discovery.</li>
+      </ul>
+    </section>
+
+    <section id="admission" class="section section-pad soft-bg">
+      <div class="section-heading">
+        <p class="eyebrow">Admissions open</p>
+        <h2>Application submission form</h2>
+        <p>Fill in the details below. Submitting will prepare an email and a WhatsApp message for the school admissions team.</p>
+      </div>
+      <form id="application-form" class="application-form">
+        <label>Child's Name<input type="text" name="childName" required placeholder="Enter child name"></label>
+        <label>Date of Birth<input type="date" name="dob" required></label>
+        <label>Class Applying For<select name="className" required><option value="">Select class</option><option>Playgroup</option><option>Nursery</option><option>LKG</option><option>UKG</option></select></label>
+        <label>Parent/Guardian Name<input type="text" name="parentName" required placeholder="Enter parent name"></label>
+        <label>Mobile Number<input type="tel" name="phone" required placeholder="Enter mobile number"></label>
+        <label>Email<input type="email" name="email" required placeholder="Enter email address"></label>
+        <label class="full">Message<textarea name="message" rows="4" placeholder="Tell us anything important about the child"></textarea></label>
+        <button class="btn primary full" type="submit">Forward Application by Email & WhatsApp</button>
+        <p class="form-note">Configured email: <strong>admissions@templeofeducation.edu</strong> • WhatsApp: <strong>+1 555 123 4567</strong></p>
+      </form>
+    </section>
+
+    <section id="location" class="section section-pad">
+      <div class="section-heading">
+        <p class="eyebrow">Location</p>
+        <h2>Visit Temple of Education</h2>
+      </div>
+      <div class="location-grid">
+        <div>
+          <p><strong>Address:</strong> 123 Learning Lane, Knowledge Park, Your City, Your State</p>
+          <p><strong>School hours:</strong> Monday to Friday, 8:30 AM – 1:30 PM</p>
+          <p><strong>Office hours:</strong> Monday to Saturday, 9:00 AM – 4:00 PM</p>
+        </div>
+        <iframe title="Temple of Education map" src="https://www.google.com/maps?q=kindergarten%20school&output=embed" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-pad contact-panel">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>We would love to help you</h2>
+      </div>
+      <p><strong>Phone:</strong> <a href="tel:+15551234567">+1 555 123 4567</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/15551234567">Message admissions</a></p>
+      <p><strong>Email:</strong> <a href="mailto:admissions@templeofeducation.edu">admissions@templeofeducation.edu</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Temple of Education Kindergarten. Learning with love, growing with confidence.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

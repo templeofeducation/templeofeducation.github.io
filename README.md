@@ -1,2 +1,2 @@
-# templeofeducation.github.io
-This repo is to maintain code for templeofeducation
+# templeofeducation
+This repo is to maintain toe application code

@@ -91,5 +91,7 @@ footer { text-align: center; padding: 24px; background: var(--ink); color: white
 .gallery-message { color: var(--muted); }
 @media (max-width: 760px) { .teacher-photo-gallery { grid-template-columns: 1fr; } .gallery-page-header { align-items: flex-start; flex-direction: column; } }
 .teacher-role { display: inline-flex; margin: 0; padding: 7px 12px; border-radius: 999px; background: var(--soft); color: var(--primary); font-weight: 800; }
+/* Keep the HOD's face and upper body in view when the portrait is cropped to the card. */
+[data-teacher="rajendra-prasad"] .teacher-photo:nth-child(3) { object-position: center 15%; }
 .school-photo-slider { margin-bottom: 16px; }
 .school-photo-slider .teacher-slides { height: 220px; }

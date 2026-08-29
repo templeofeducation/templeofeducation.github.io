@@ -21,7 +21,7 @@ document.querySelector('#application-form').addEventListener('submit', (event) =
   event.preventDefault();
   const formData = new FormData(event.currentTarget);
   const details = [
-    'New admission application for Temple of Education Kindergarten',
+    'New admission application for Temple of Education Little Champs Play School',
     `Child Name: ${formData.get('childName')}`,
     `Date of Birth: ${formData.get('dob')}`,
     `Class Applying For: ${formData.get('className')}`,
@@ -31,7 +31,7 @@ document.querySelector('#application-form').addEventListener('submit', (event) =
     `Message: ${formData.get('message') || 'N/A'}`,
   ].join('\n');
 
-  const mailtoLink = `${admissionsEmail}?subject=${encodeURIComponent('Admission Application - Temple of Education')}&body=${encodeURIComponent(details)}`;
+  const mailtoLink = `${admissionsEmail}?subject=${encodeURIComponent('Admission Application - Temple of Education Little Champs Play School')}&body=${encodeURIComponent(details)}`;
   const whatsappLink = `${admissionsWhatsApp}?text=${encodeURIComponent(details)}`;
 
   const emailLink = document.createElement('a');

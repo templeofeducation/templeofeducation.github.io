@@ -37,7 +37,7 @@ if (!selection || !/^[a-z-]+$/.test(selection) || (teacher && schoolGallery)) {
       const name = card.querySelector('h3')?.textContent?.trim() || 'Gallery';
       const photos = [...card.querySelectorAll('.teacher-photo')];
       title.textContent = `${name} — Photos`;
-      document.title = `${name} Photos | Temple of Education`;
+      document.title = `${name} Photos | Temple of Education Little Champs Play School`;
       gallery.replaceChildren();
 
       photos.forEach((photo, index) => {

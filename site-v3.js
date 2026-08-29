@@ -34,8 +34,10 @@ document.querySelector('#application-form').addEventListener('submit', (event) =
   const mailtoLink = `${admissionsEmail}?subject=${encodeURIComponent('Admission Application - Temple of Education')}&body=${encodeURIComponent(details)}`;
   const whatsappLink = `${admissionsWhatsApp}?text=${encodeURIComponent(details)}`;
 
-  window.location.href = mailtoLink;
-  window.open(whatsappLink, '_blank', 'noopener');
+  const emailLink = document.createElement('a');
+  emailLink.href = mailtoLink;
+  emailLink.click();
+  window.location.assign(whatsappLink);
 });
 
 document.querySelectorAll('[data-slider]').forEach((teacherSlider) => {

@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site-v13.css" />
+  <link rel="stylesheet" href="site-v14.css" />
 </head>
 <body>
   <header class="site-header">
@@ -54,9 +54,6 @@
           <a class="btn secondary" href="#contact">Talk to Admissions</a>
         </div>
       </div>
-      <div class="hero-visual">
-        <img src="assets/toe-banner.svg" alt="Temple of Education Little Champs Play School emblem" width="1254" height="1254" />
-      </div>
     </section>
 
     <section id="gallery" class="section section-pad soft-bg">
@@ -77,10 +74,14 @@
           <p>Use this category for photos of study areas, learning corners, boards, seating, and classroom decorations.</p>
         </article>
         <article class="gallery-card">
-          <div class="photo-placeholder" role="img" aria-label="Activities photo placeholder">Activities</div>
+          <div class="teacher-slider school-photo-slider" data-slider aria-label="Creative daily activities photos">
+            <div class="teacher-slides"><img class="teacher-photo is-active" src="assets/creative-daily-activities-1.svg" alt="Children enjoying guided play and hands-on learning — photo 1 of 5" width="1448" height="1086" /><img class="teacher-photo" src="assets/creative-daily-activities-2.svg" alt="Child matching letters on an alphabet puzzle — photo 2 of 5" width="720" height="1280" loading="lazy" /><img class="teacher-photo" src="assets/creative-daily-activities-3.svg" alt="Children exploring puzzles, blocks, and classroom play — photo 3 of 5" width="1195" height="896" loading="lazy" /><img class="teacher-photo" src="assets/creative-daily-activities-4.svg" alt="Creative classroom activity moments — photo 4 of 5" width="900" height="1600" loading="lazy" /><img class="teacher-photo" src="assets/creative-daily-activities-5.svg" alt="Child completing a body-parts puzzle — photo 5 of 5" width="900" height="1600" loading="lazy" /></div>
+            <button class="slider-button slider-prev" type="button" aria-label="Previous activity photo">‹</button>
+            <button class="slider-button slider-next" type="button" aria-label="Next activity photo">›</button>
+          </div>
           <span class="category-label">Category: Activities</span>
           <h3>Creative daily activities</h3>
-          <p>Use this category for drawing, craft, dance, rhymes, games, story time, and hands-on learning moments.</p>
+          <p>See our children learn through puzzles, creative play, classroom games, and hands-on activities.</p>
         </article>
         <article class="gallery-card">
           <div class="photo-placeholder" role="img" aria-label="Events photo placeholder">Events</div>
@@ -89,10 +90,14 @@
           <p>Use this category for annual day, festivals, competitions, assemblies, parent events, and special programs.</p>
         </article>
         <article class="gallery-card">
-          <div class="photo-placeholder" role="img" aria-label="Campus photo placeholder">Campus</div>
+          <div class="teacher-slider school-photo-slider" data-slider aria-label="Safe campus spaces photos">
+            <div class="teacher-slides"><img class="teacher-photo is-active" src="assets/safe-campus-space-1.svg" alt="Spacious classroom with colorful child-sized tables and chairs — photo 1 of 3" width="1040" height="585" /><img class="teacher-photo" src="assets/safe-campus-space-2.svg" alt="Colorful learning corner with positive messages and child-sized furniture — photo 2 of 3" width="720" height="1280" loading="lazy" /><img class="teacher-photo" src="assets/safe-campus-space-3.svg" alt="Organized classroom with child-sized seating and a clear activity area — photo 3 of 3" width="1040" height="585" loading="lazy" /></div>
+            <button class="slider-button slider-prev" type="button" aria-label="Previous campus photo">‹</button>
+            <button class="slider-button slider-next" type="button" aria-label="Next campus photo">›</button>
+          </div>
           <span class="category-label">Category: Campus</span>
           <h3>Safe campus spaces</h3>
-          <p>Use this category for play areas, entrance views, corridors, school garden, and child-friendly facilities.</p>
+          <p>Explore our organized classrooms, colorful learning corners, and child-friendly activity spaces.</p>
         </article>
       </div>
     </section>
@@ -206,8 +211,7 @@
         <label>Mobile Number<input type="tel" name="phone" required placeholder="Enter mobile number"></label>
         <label>Email<input type="email" name="email" required placeholder="Enter email address"></label>
         <label class="full">Message<textarea name="message" rows="4" placeholder="Tell us anything important about the child"></textarea></label>
-        <button class="btn primary full" type="submit">Forward Application by Email & WhatsApp</button>
-        <p class="form-note">Configured email: <strong>admissions@templeofeducation.edu</strong> • WhatsApp: <strong>+1 555 123 4567</strong></p>
+        <button class="btn primary full" type="submit">Submit Application</button>
       </form>
     </section>
 
@@ -231,9 +235,9 @@
         <p class="eyebrow">Contact</p>
         <h2>We would love to help you</h2>
       </div>
-      <p><strong>Phone:</strong> <a href="tel:+15551234567">+1 555 123 4567</a></p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/15551234567">Message admissions</a></p>
-      <p><strong>Email:</strong> <a href="mailto:admissions@templeofeducation.edu">admissions@templeofeducation.edu</a></p>
+      <p><strong>Phone:</strong> <a id="contact-phone" href="tel:+918074436269">+91 80744 36269</a></p>
+      <p><strong>WhatsApp:</strong> <a id="contact-whatsapp" href="https://wa.me/918074436269">Message admissions</a></p>
+      <p><strong>Email:</strong> <a id="contact-email" href="mailto:monesh.garikina@gmail.com">monesh.garikina@gmail.com</a></p>
     </section>
   </main>
 

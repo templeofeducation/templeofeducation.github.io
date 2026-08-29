@@ -96,3 +96,4 @@ footer { text-align: center; padding: 24px; background: var(--ink); color: white
 [data-teacher="rajendra-prasad"] .teacher-photo:nth-child(3) { object-position: center 80%; }
 .school-photo-slider { margin-bottom: 16px; }
 .school-photo-slider .teacher-slides { height: 220px; }
+.single-school-photo { height: 220px; margin-bottom: 16px; }

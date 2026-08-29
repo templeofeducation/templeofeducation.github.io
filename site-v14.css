@@ -23,7 +23,7 @@ a { color: inherit; }
 .menu-toggle { display: none; border: 0; background: var(--primary); color: white; border-radius: 10px; padding: 9px 12px; font-size: 1.2rem; }
 .section-pad { padding: 76px 20px; }
 .section { max-width: 1120px; margin: auto; }
-.hero { min-height: 78vh; display: grid; grid-template-columns: 1.3fr .7fr; align-items: center; gap: 40px; max-width: 1180px; margin: auto; background: radial-gradient(circle at top right, #ffe8a3 0 25%, transparent 26%), radial-gradient(circle at bottom left, #d8fff7 0 22%, transparent 23%); }
+.hero { min-height: 78vh; display: grid; grid-template-columns: 1fr; align-items: center; gap: 40px; max-width: 1180px; margin: auto; background: radial-gradient(circle at top right, #ffe8a3 0 25%, transparent 26%), radial-gradient(circle at bottom left, #d8fff7 0 22%, transparent 23%); }
 .eyebrow { color: var(--primary); text-transform: uppercase; letter-spacing: .12em; font-weight: 800; font-size: .82rem; }
 h1, h2, h3 { font-family: 'Baloo 2', cursive; line-height: 1.05; margin: 0 0 16px; }
 h1 { font-size: clamp(2.4rem, 6vw, 5rem); max-width: 780px; }
@@ -34,8 +34,6 @@ h2 { font-size: clamp(2rem, 4vw, 3rem); }
 .primary { background: var(--primary); color: white; box-shadow: 0 10px 20px rgba(108,77,246,.28); }
 .secondary { background: var(--white); color: var(--primary); border: 2px solid #ece6ff; }
 .card, .teacher-card, .application-form, .contact-panel { background: var(--white); border-radius: 28px; box-shadow: var(--shadow); }
-.hero-visual { display: grid; place-items: center; }
-.hero-visual img { display: block; width: min(100%, 460px); height: auto; border-radius: 50%; filter: drop-shadow(0 24px 28px rgba(37, 48, 71, .2)); }
 .soft-bg { background: linear-gradient(180deg, #fff7df, #f4fffd); border-radius: 34px; }
 .section-heading { max-width: 760px; margin-bottom: 28px; }
 .cards, .teacher-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
